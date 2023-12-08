@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrise Decor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-container{
+            grid-column: 3/8;
+            grid-row: 3/14;
+        }
+
+        footer{
+            grid-row: 14/15;
+        }
+
+        p{
+            text-align: center;
+        }
+
+ @media screen and (max-width: 1050px) {
+  
+    
+  .sidebar {
+    grid-column: 1/8;
+    grid-row: 3/4;
+    overflow:visible;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  header{
+    grid-column: 1/8;
+    grid-row: 1/3;
+  }
+ 
+  .card-container{
+  grid-column: 1/8;
+  grid-row: 4/15;
+  overflow:auto;
+  }
+
+  .card{
+    margin:0 0 0 0;
+  }
+
+  footer{
+    grid-row: 15/16;
+  }
+  
+
+  
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+          <img src="images/sunrise-black.png" class="logo" alt="logo">  
+          <h1>Sunrise Decor</h1>
+        </header>
+    
+        <div class="sidebar">
+            <a href="index.html"><b>Home</b></a>
+            <a class="active" href="couch.html">Sofas</a>
+            <a href="table.html">End Tables</a>
+            <a href=chair.html>Armchairs</a>
+            <a href="contact.html"><b>Contact</b></a>
+          </div>
+
+          <section class="card-container">
+            <article class="card">
+              
+                <figure class="card-photo">
+                    <img src="images/Sofas/Sofa_200x200.webp">
+                </figure>
+    
+                <main class="caption">
+                    <p>
+                        Rust Sofa <br>
+                        $890
+                      </p>
+                </main>
+               
+            </article>
+    
+            <article class="card" style="grid-column: 3/5; grid-column:9/14;">
+              
+              <figure class="card-photo">
+                  <img src="images/Sofas/canvas-sofa_200x200.webp">
+              </figure>
+    
+              <main class="caption">
+                <p>
+                    Canvas Sofa <br>
+                    $680
+                  </p>
+              </main>
+             
+          </article>
+
+          <article class="card">
+              
+            <figure class="card-photo">
+                <img src="images/Sofas/Upholstered-sofa_200x200.webp">
+            </figure>
+
+            <main class="caption">
+                <p>
+                    Upholstered Sofa <br>
+                    $750
+                  </p>
+            </main>
+           
+        </article>
+
+        <article class="card" style="grid-column: 3/5; grid-column:9/14;">
+          
+          <figure class="card-photo">
+              <img src="images/Sofas/velvet_200x200.webp">
+          </figure>
+
+          <main class="caption">
+            <p>
+                Velvet Sofa <br>
+                $950
+              </p>
+          </main>
+         
+      </article>
+
+      <article class="card">
+              
+        <figure class="card-photo">
+            <img src="images/Sofas/rose-sofa_200x200.webp">
+        </figure>
+
+        <main class="caption">
+            <p>
+                Rose Sofa <br>
+                $800
+              </p>
+        </main>
+       
+    </article>
+
+    <article class="card" style="grid-column: 3/5; grid-column:9/14;">
+      
+      <figure class="card-photo">
+          <img src="images/Sofas/gray-sofa_200x200.webp">
+      </figure>
+
+      <main class="caption">
+        <p>
+            Gunmetal Sofa <br>
+            $890
+          </p>
+      </main>
+     
+    </article>
+
+    </section>
+    <footer>
+        <p>Copyright &#169; 2022 Abebe</p>
+    </footer>
+    </div>
+</body>
+
+</html>

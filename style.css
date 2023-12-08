@@ -1,0 +1,182 @@
+*
+{margin:0;
+padding:0;
+border:0; }
+
+html{
+  background-color: white;
+}
+
+p, h1, h2, h3{
+  font-family: serif Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 50px);
+  
+}
+
+
+header{
+    grid-column:1/8;
+    grid-row:1/3;
+    background: #F2EFE9;
+    border: solid 10px #D9AB82;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    padding: 0 20px;
+}
+.logo {
+  height: 90px; /* Set the desired height */
+  width: 90px; /* Maintain the aspect ratio */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+h1{
+  font-size: 1cm;
+  margin-top:10px;
+  flex:1;
+  text-align: center;
+}
+
+
+ /* The side navigation menu */
+ .sidebar {
+  grid-column: 1/3;
+  grid-row: 3/9;
+    margin: 0;
+    padding: 0;
+    background-color: #F2EFE9;
+    
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    font-family: serif, Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #8C593B;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #D9AB82;
+    color: white;
+  }
+  
+  .photo{
+    grid-column: 3/8;
+    grid-row: 3/9;
+    border: solid #8C593B 10px;
+    background-color: #F2EFE9;
+   
+  }
+
+  
+  .card-container{
+    grid-column: 1/8;
+    grid-row: 9/15;
+    background-color:#F2EFE9;
+    border: solid 5px #BF8654;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:5px;
+   
+  }
+
+  .card {
+    background-color: #F2EFE9;
+    margin:5px 10px 5px 10px;
+    border: solid 5px #BF8654;
+  }
+
+  .card:hover{ 
+      box-shadow: 0 0 20px rgba(33,33,33,.2); 
+    }
+
+  .caption {
+    padding: .5rem;
+    line-height: 1em;
+    background-color: #F2EFE9;
+  }
+  
+
+  footer{
+    grid-column: 1/8;
+    grid-row: 15/16;
+    background-color: #BF8654;
+    text-align: center;
+    padding:15px 0 0 0;
+    
+  }
+  
+
+
+
+
+
+
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 1050px) {
+  
+    
+    .sidebar {
+      grid-column: 1/8;
+      grid-row: 3/4;
+      overflow:visible;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+
+    header{
+      grid-column: 1/8;
+      grid-row: 1/3;
+    }
+    .photo{
+      grid-column: 1/8;
+      grid-row: 4/10;
+      position: relative;
+    }
+    .card-container{
+    grid-column: 1/8;
+    grid-row: 10/15;
+    overflow:auto;
+    }
+
+    .card{
+      margin:0 0 0 0;
+    }
+
+    footer{
+      grid-row: 15/16;
+      
+    }
+    
+  
+    
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } 

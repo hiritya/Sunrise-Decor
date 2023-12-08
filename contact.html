@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrise Decor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-container{
+            grid-column: 3/8;
+            grid-row: 3/14;
+        }
+        .photo{
+            grid-column: 3/8;
+            grid-row: 3/6;
+            background-color: #F2EFE9;
+        }
+
+        .contact-1{
+            grid-column: 3/5;
+            grid-row: 6/9; 
+            background-color: #D9AB82;
+        }
+
+        .contact-2{
+            grid-column: 5/6;
+            grid-row: 6/9; 
+            background-color: #F2CDAC;
+        }
+
+        .contact-3{
+            grid-column: 6/7;
+            grid-row: 6/9; 
+            background-color: #D9AB82;
+        }
+
+        .contact-4{
+            grid-column: 7/8;
+            grid-row: 6/9; 
+            background-color: #F2CDAC;
+        }
+
+        footer{
+            grid-row: 9/10;
+        }
+    
+        @media screen and (max-width: 1050px) {
+            .photo{
+            grid-column: 1/8;
+            grid-row: 4/7; 
+            }
+            h3{
+                margin:5px;
+            }
+            .contact-1{
+            grid-column: 1/5;
+            grid-row: 7/10;  
+            }
+            .contact-2{
+            grid-column: 5/6;
+            grid-row: 7/10;  
+            }
+            .contact-3{
+            grid-column: 6/7;
+            grid-row: 7/10;  
+            }
+            .contact-4{
+            grid-column: 7/8;
+            grid-row: 7/10;  
+            }
+            footer{
+            grid-row: 10/11;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/sunrise-black.png" class="logo" alt="logo">  
+        <h1>Sunrise Decor</h1>
+        </header>
+    
+        <div class="sidebar">
+            <a href="index.html"><b>Home</b></a>
+            <a href="couch.html">Sofas</a>
+            <a href="table.html">End Tables</a>
+            <a href=chair.html>Armchairs</a>
+            <a class="active" href="contact.html"><b>Contact</b></a>
+          </div>
+
+          <div class="photo">
+            <h1 style="text-align:center; position: relative; top:30%">Contact Us!</h2>
+            
+          </div>
+
+          <div class="contact-1">
+            <h2 style="text-align:center; position:relative; top:20%;"><strong>Email our Customer Support Team:</strong></h1>
+            <h3 style="text-align:center; position:relative; top:25%; margin:0px;">support@sunrisedecor.com</h2>
+          </div>
+
+          <div class="contact-2">
+            <img src="images/FB.png" style="height:30%; width:30%; position:relative; top:20%; left:40%;">
+            <h3 style="text-align:center; position:relative; top:30%;">SunriseDecor</h2>
+          </div>
+
+          <div class="contact-3">
+            <img src="images/IG.png" style="height:30%; width:30%; position:relative; top:20%; left:40%;">
+            <h3 style="text-align:center; position:relative; top:30%;">sunrise.decor</h2>
+          </div>
+
+          <div class="contact-4">
+            <img src="images/TT.png" style="height:30%; width:30%; position:relative; top:20%; left:40%;">
+            <h3 style="text-align:center; position:relative; top:30%;">sunrise.decor</h2>
+          </div>
+
+          <footer>
+            <p> Copyright &#169; 2022 Abebe</p>
+          </footer>
+    </div>
+</body>
+</html>
